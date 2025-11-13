@@ -19,7 +19,7 @@ const isProd = !!process.env.DATABASE_URL;
             type: 'postgres',
             url: process.env.DATABASE_URL,
             autoLoadEntities: true,
-            synchronize: false,
+            synchronize: true,
             ssl: {
               rejectUnauthorized: false,
             },
